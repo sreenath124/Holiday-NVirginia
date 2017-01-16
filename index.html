@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLIDAY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="max_width">
+        <header>
+            <h1>
+                <a href="">
+                    <img class="banner" src="assets/banner.png" alt="banner">
+                </a>
+            </h1>
+        </header>
+        <main>
+            <section class="form_section">
+                <h2>happy Holidays from northen virginia magazine!</h2>
+                <div class="sub_heading_sec">
+                    <p class="sub_heading">Give 12 issues of northen virginia magazine for just $10!</p>
+                    <p class="sub_heading sub">save 83% off the cover price!</p>
+                    <div class="errors"></div>
+                </div>
+                <form action="">
+                    <span class="required">*required fields</span>
+                    <section class="recipients">
+                        <h3>Please send gift to:</h3>
+                        <fieldset>
+                            <div class="input_box">
+                                <label for="first_name">First name:<span class="required">*</span></label>
+                                <input type="text" name="first name" id="first_name">
+                            </div>
+                            <div class="input_box">
+                                <label for="last_name">Last name:<span class="required">*</span></label>
+                                <input type="text" name="last name" id="last_name">
+                            </div>
+                            <div class="input_box">
+                                <label for="street_address">Street Address:<span class="required">*</span></label>
+                                <input type="text" name="street address" id="street_address">
+                            </div>
+                            <div class="input_box">
+                                <label for="unit">Apt/unit/Suite:</label>
+                                <input type="text" name="unit" id="unit">
+                            </div>
+                            <div class="input_box">
+                                <label for="city">City:<span class="required">*</span></label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div class="input_box">
+                                <label for="state">State:<span class="required">*</span></label>
+                                <div class="select_container">
+                                    <select name="state" id="state">
+                                        <option value="Virginia">Virginia</option>
+                                        <option value="California">California</option>
+                                        <option value="VirginiaFlorida">Florida</option>
+                                        <option value="Hawaii">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input_box">
+                                <label for="zip">Zip code:<span class="required">*</span></label>
+                                <input type="text" name="zip" id="zip">
+                            </div>
+                            <div class="input_box">
+                                <label for="">Recipient Email:</label>
+                                <input type="text" name="recipient email">
+                                <p class="recipient_email">Enter recipient email here to send them a complimentary gift email</p>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <h3 class="sec_heading">select your recipient offer<span class="required">*</span></h3>
+                            <input type="radio" id="best_deal" name="deal">
+                            <label for="best_deal" class="label_radio">36 issues for $20 (best deal)!</label>
+                            <input type="radio" id="better_deal" name="deal">
+                            <label for="better_deal" class="label_radio">24 issues for $15</label>
+                            <input type="radio" id="good_deal" name="deal">
+                            <label for="good_deal" class="label_radio">12 isues for $10</label>
+                    </section>
+                    <section class="new_recipients"></section>
+                    <button class="add_more">Add more gift recipients</button>
+                    </fieldset>
+                    <fieldset>
+                        <h3 class="sec_heading">Bill gift to:</h3>
+                        <div class="input_box">
+                            <label for="first_name">First name:<span class="required">*</span></label>
+                            <input type="text" name="first name" id="first_name">
+                        </div>
+                        <div class="input_box">
+                            <label for="last_name">Last name:<span class="required">*</span></label>
+                            <input type="text" name="last name" id="last_name">
+                        </div>
+                        <div class="input_box">
+                            <label for="street_address">Street Address:<span class="required">*</span></label>
+                            <input type="text" name="street address" id="street_address">
+                        </div>
+                        <div class="input_box">
+                            <label for="unit">Apt/unit/Suite:</label>
+                            <input type="text" name="unit" id="unit">
+                        </div>
+                        <div class="input_box">
+                            <label for="city">City:<span class="required">*</span></label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div class="input_box">
+                            <label for="state">State:<span class="required">*</span></label>
+                            <div class="select_container">
+                                <select name="state" id="state">
+                                    <option value="Virginia">Virginia</option>
+                                    <option value="Virginia">Virginia</option>
+                                    <option value="Virginia">Virginia</option>
+                                    <option value="Virginia">Virginia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <label for="zip">Zip code:<span class="required">*</span></label>
+                            <input type="text" name="zip" id="zip">
+                        </div>
+                        <div class="input_box">
+                            <label for="email">Email<span class="required">*</span></label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h3 class="sec_heading">I'd like to start/renew my own subscription for this same low price:<span class="required">*</span></h3>
+                        <input type="radio" id="best_deal_new" name="deal_new">
+                        <label for="best_deal_new" class="label_radio">36 issues for $20 (best deal)!</label>
+                        <input type="radio" id="better_deal_new" name="deal_new">
+                        <label for="better_deal_new" class="label_radio">24 issues for $15</label>
+                        <input type="radio" id="good_deal_new" name="deal_new">
+                        <label for="good_deal_new" class="label_radio">12 isues for $10</label>
+                        <input type="radio" name="deal_new" id="no_deal_new">
+                        <label for="no_deal_new" class="label_radio">No thankyou, i'm just giving a gift.</label>
+                    </fieldset>
+                    <fieldset>
+                        <h3 class="sec_heading">Yes, I'd like to  recieve FREE e-newsletters from northen virginia magazine!</h3>
+                        <input type="checkbox" id="Dining">
+                        <label for="Dining" class="label_checkbox">Dining out</label>
+                        <input type="checkbox" id="Shopping">
+                        <label for="Shopping" class="label_checkbox">Shopping &amp; fashion</label>
+                        <input type="checkbox" id="Entertainment">
+                        <label for="Entertainment" class="label_checkbox">Entertainment &amp; Arts</label>
+                        <input type="checkbox" id="Travel">
+                        <label for="Travel" class="label_checkbox">Travel</label>
+                        <input type="checkbox" id="Health">
+                        <label for="Health" class="label_checkbox">Health &amp; Beauty</label>
+                        <input type="checkbox" id="Home">
+                        <label for="Home" class="label_checkbox">Home &amp; design</label>
+                        <input type="checkbox" id="senior_living">
+                        <label for="senior_living" class="label_checkbox">Senior living</label>
+                        <input type="checkbox" id="Education">
+                        <label for="Education" class="label_checkbox">Education</label>
+                        <input type="checkbox" id="Park">
+                        <label for="Park" class="label_checkbox">Park &amp; Rec.</label>
+                        <input type="checkbox" id="Family">
+                        <label for="Family" class="label_checkbox">Family</label>
+                        <input type="checkbox" id="Pets">
+                        <label for="Pets" class="label_checkbox">Pets</label>
+                        <input type="checkbox" id="Wedding">
+                        <label for="Wedding" class="label_checkbox">Wedding</label>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="magazine_section">
+                <img class="magazine" src="assets/magazine.png" alt="magazine">
+            </section>
+        </main>
+        <footer>
+            <form action="" id="payment">
+                <h3 class="sec_heading">Payment Method</h3>
+                <div class="payment_container">
+                    <div class="card_type card_input_container">
+                        <label>Card type:<span class="required">*</span></label>
+                        <div>
+                            <img src="assets/mastercard.png" alt="mastercard">
+                            <input type="radio" name="card" id="mastercard">
+                        </div>
+                        <div>
+                            <img src="assets/american-express.png" alt="american-express">
+                            <input type="radio" name="card" id="american-express">
+                        </div>
+                        <div>
+                            <img src="assets/visa.png" alt="visa">
+                            <input type="radio" name="card" id="visa">
+                        </div>
+                        <div>
+                            <img src="assets/discover.png" alt="discover">
+                            <input type="radio" name="card" id="discover">
+                        </div>
+                    </div>
+                    <div class="card_input_container">
+                        <label for="card_number">Card Number:<span class="required">*</span></label>
+                        <input type="text" id="card_number" name="card number">
+                    </div>
+                    <div class="card_input_container">
+                        <label for="name_oncard">Name as it appears on the card:<span class="required">*</span></label>
+                        <input type="text" id="name_oncard" name="name on card">
+                    </div>
+                    <div class="expiration_date card_input_container">
+                        <label>Expiration Date:<span class="required">*</span></label>
+                        <div class="exp_month">
+                            <select name="month" id="month">
+                                <option selected value='' disabled>Month</option>
+                                <option value='1'>Janaury</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select>
+                        </div>
+                        <div class="exp_year">
+                            <select name="year" id="year">
+                                <option value="" disabled selected>Year</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card_input_container">
+                        <label for="ccv">CCV<span class="required">*</span></label>
+                        <input type="text" id="ccv" name="ccv"><a href="" class="sample">sample</a>
+                    </div>
+                </div>
+                <button class="order">Order Now</button>
+            </form>
+        </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
